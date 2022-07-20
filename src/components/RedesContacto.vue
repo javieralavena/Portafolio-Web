@@ -1,6 +1,6 @@
 <template>
 
-    <div class="d-flex justify-space-around my-5">
+    <div class="d-flex justify-space-around my-7">
         <a href="https://www.linkedin.com/in/javieratroncosoaravena/" target="_blank" class="text-decoration-none">
             <v-icon large color="indigo">
                 mdi-linkedin

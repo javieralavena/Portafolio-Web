@@ -12,6 +12,7 @@
       <v-col cols="12" lg="6">
 
       <AboutMe class="d-none d-lg-flex"></AboutMe>
+      <Desplegable class="d-lg-none d-xl-none"></Desplegable>
 
       </v-col>
 
@@ -98,6 +99,7 @@
 import CardImg from '@/components/CardImg.vue'
 import RedesContacto from '@/components/RedesContacto.vue'
 import AboutMe from '@/components/AboutMe.vue'
+import Desplegable from '@/components/AboutMeDesplegable.vue'
 export default {
   name: 'view-home',
   // props: {},
@@ -117,7 +119,8 @@ export default {
   components: {
     CardImg,
     RedesContacto,
-    AboutMe
+    AboutMe,
+    Desplegable
   },
   // mixins: [],
   // filters: {},
