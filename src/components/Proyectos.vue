@@ -5,7 +5,7 @@
 
         <h1 class="nombre text-center py-10"> ✨Mis Proyectos✨</h1>
 
-        <v-row class="mx-16 mb-5">
+        <v-row class="mx-md-16 mx-sm-16 mx-lg-16 mx-xl-16 mb-5">
 
             <v-col cols="12" lg="4" md="6">
                 <v-card class="mx-auto" max-width="344">
