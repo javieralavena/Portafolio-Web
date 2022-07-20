@@ -1,7 +1,7 @@
 <template>
     <v-expansion-panels class=" mx-md-16 mx-sm-16 mb-5 desplegable" focusable>
         <v-expansion-panel >
-            <v-expansion-panel-header><h2 class="text-center">
+            <v-expansion-panel-header color="#ffb5a6"><h2 class="text-center" >
                     Sobre Mí 🤭
                 </h2></v-expansion-panel-header>
             <v-expansion-panel-content class="mt-5">
