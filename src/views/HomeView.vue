@@ -2,17 +2,11 @@
   <v-container fluid>
     <v-row no-gutters class="row">
 
-      <v-col lg="6" class="col">
+      <v-col cols="12" lg="6">
 
-        <v-img contain lazy-src="https://picsum.photos/id/11/10/6" max-height="250" max-width="220" class=" foto-perfil"
-          src="@/assets/1647356939400.jpg"></v-img>
+        <CardImg></CardImg>
 
-        <v-card class="rectangulo text-center " max-width="480">
-          <h1 class="nombre">Javiera Troncoso</h1>
-          <h3 class="py-6 px-5">DESARROLLADORA WEB FRONT-END TRAINEE / INGENIERA CIVIL INDUSTRIAL</h3>
-        </v-card>
-
-        <div class="iconos d-flex justify-center ">
+        <div class="d-flex justify-center mt-7">
           <a href="https://www.linkedin.com/in/javieratroncosoaravena/" target="_blank"
             class="text-decoration-none ps-5">
             <v-icon large color="indigo">
@@ -41,9 +35,9 @@
 
       </v-col>
 
-      <v-col lg="6" class="col">
+      <v-col cols="12" lg="6" class="col">
 
-        <v-card class="card ms-5" max-width="100%" outlined>
+        <v-card class="card ms-5 mb-5" max-width="100%" outlined>
           <v-list-item>
             <v-list-item-content>
               <h2 class=" mb-4">
@@ -149,6 +143,7 @@
 </template>
 
 <script>
+import CardImg from '@/components/CardImg.vue'
 export default {
   name: 'view-home',
   // props: {},
@@ -165,7 +160,9 @@ export default {
     // -- Vuex mappings
   },
   // watch: {},
-  // components: {},
+  components: {
+    CardImg
+  },
   // mixins: [],
   // filters: {},
   // -- Lifecycle Methods
@@ -174,59 +171,36 @@ export default {
 </script>
 
 <style scoped>
-/*
-    breakpoints
-    xs: < 600px
-    sm : 600px > < 960px
-    md: 960px > < 1264px*
-    lg: 1264px > < 1904px*
-    xl : > 1904px*
-*/
-
 * {
   box-sizing: border-box;
   font-family: 'Merriweather', serif;
 }
 
-.row {
-  margin-left: 70px;
-  margin-right: 70px;
+
+
+@media screen and (min-width: 960px) and (max-width:1264px) {
+
+  
+
+  h1 {
+    font-size: 3rem;
+    line-height: normal;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    line-height: normal;
+  }
 }
 
-.col {
-  height: 500px;
-}
 
-.foto-perfil {
-  border-radius: 5%;
-  z-index: 1;
-  position: relative;
-  top: 90px;
-}
 
-.rectangulo {
-  background: radial-gradient(circle at top left, #af9dcc, #ffb5a6);
-  position: relative;
-  z-index: 0;
-  left: 80px;
-  top: -190px;
-  padding-top: 30px;
-  padding-left: 145px;
-}
 
-.nombre {
-  font-size: 60px;
-  line-height: normal;
-}
 
-.iconos {
-  position: relative;
-  top: -170px;
-}
-
-.card {
+.cardm {
   margin-top: 60px;
   border-color: #af9dcc;
+  margin-right: 70px;
 }
 
 p {
