@@ -5,33 +5,7 @@
       <v-col cols="12" lg="6">
 
         <CardImg></CardImg>
-
-        <div class="d-flex justify-center mt-7">
-          <a href="https://www.linkedin.com/in/javieratroncosoaravena/" target="_blank"
-            class="text-decoration-none ps-5">
-            <v-icon large color="indigo">
-              mdi-linkedin
-            </v-icon>
-          </a>
-
-          <a href="https://github.com/javieralavena" target="_blank" class="text-decoration-none ps-5">
-            <v-icon large color="black">
-              mdi-github
-            </v-icon>
-          </a>
-
-          <a href="https://www.instagram.com/javieralavena/" target="_blank" class="text-decoration-none ps-5">
-            <v-icon large color="pink">
-              mdi-instagram
-            </v-icon>
-          </a>
-
-          <a href="mailto:javierabta97@gmail.com?" target="_blank" class="text-decoration-none ps-5">
-            <v-icon large color="red">
-              mdi-gmail
-            </v-icon>
-          </a>
-        </div>
+        <RedesContacto></RedesContacto>
 
       </v-col>
 
@@ -144,6 +118,7 @@
 
 <script>
 import CardImg from '@/components/CardImg.vue'
+import RedesContacto from '@/components/RedesContacto.vue'
 export default {
   name: 'view-home',
   // props: {},
@@ -161,7 +136,8 @@ export default {
   },
   // watch: {},
   components: {
-    CardImg
+    CardImg,
+    RedesContacto
   },
   // mixins: [],
   // filters: {},
@@ -175,27 +151,6 @@ export default {
   box-sizing: border-box;
   font-family: 'Merriweather', serif;
 }
-
-
-
-@media screen and (min-width: 960px) and (max-width:1264px) {
-
-  
-
-  h1 {
-    font-size: 3rem;
-    line-height: normal;
-  }
-
-  h3 {
-    font-size: 0.8rem;
-    line-height: normal;
-  }
-}
-
-
-
-
 
 .cardm {
   margin-top: 60px;
